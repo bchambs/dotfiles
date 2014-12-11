@@ -1,0 +1,76 @@
+[
+    {
+        "keys": ["alt+shift+1"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    },
+
+    {
+        "keys": ["alt+shift+2"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 0.5, 1.0],
+            "cells": [
+                [0, 0, 1, 1],
+                [0, 1, 1, 2],
+                [1, 0, 2, 2]
+            ]
+        }
+    },
+
+    {
+        "keys": ["alt+shift+3"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 0.5, 1.0],
+            "cells": [
+                [0, 0, 1, 1],
+                [1, 0, 2, 1],
+                [0, 1, 2, 2]
+            ]
+        }
+    },
+
+    {
+        "keys": ["alt+shift+4"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 0.5, 1.0],
+            "cells": [
+                [0, 0, 1, 2], 
+                [1, 0, 2, 1], 
+                [1, 1, 2, 2]
+            ]
+        }
+    },
+
+
+    { "keys": ["alt+f"], "command": "reindent"},
+
+    { "keys": ["ctrl+f5"], "command": "unfold_all" },
+    { "keys": ["ctrl+f8"], "command": "fold_all" }
+
+    ,
+    { "keys": ["alt+w"], "command": "move", "args": {"by": "lines", "forward": false} },
+    { "keys": ["alt+s"], "command": "move", "args": {"by": "lines", "forward": true} },
+    // { "keys": ["alt+a"], "command": "move", "args": {"by": "characters", "forward": false} },
+    // { "keys": ["alt+d"], "command": "move", "args": {"by": "characters", "forward": true} },
+    { "keys": ["alt+a"], "command": "move", "args": {"by": "words", "forward": false} },
+    { "keys": ["alt+d"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+
+    { "keys": ["alt+q"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+    { "keys": ["alt+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+    { "keys": ["alt+1"], "command": "toggle_comment", "args": { "block": false } }
+
+]
